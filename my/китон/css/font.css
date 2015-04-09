@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'pf_din_text_comp_proregular';
+    src: url('../fonts/PFDinTextCompPro-Regular-webfont.eot');
+    src: url('../fonts/PFDinTextCompPro-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PFDinTextCompPro-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/PFDinTextCompPro-Regular-webfont.woff') format('woff'),
+         url('../fonts/PFDinTextCompPro-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
