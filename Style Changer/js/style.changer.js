@@ -1,11 +1,32 @@
 $(function(){
 
   var head = $('head');
-  var styles = $('link');
+  var styles = $('link'), themes = new Array(), links = new Array();
   var curStyleIndex = 0;
   
+      styles.each(function(i){
+        var buff = this.outerHTML;
+        buff = buff.split(' ');
+        buff = buff[2].split('>');
+        buff = buff[0].split('=');
+        buff = buff[1].split('"');
+          
+        links.push(buff[1]);
+          
+        buff = buff[1].split('/');
+        buff = buff[1].split('.');
+        buff = buff[0];
+          
+        themes.push(buff);
+      });
+      
+      console.log(themes);
+      console.log(links);
+    
   var changeStyle = function(){
     
+
+      
     $('body').append('<sprite><p>Pls, wait until we change a style...</p></sprite>');
     $('body sprite').css({
       'display':'block',
@@ -22,8 +43,9 @@ $(function(){
       'opacity':'1'
     },300,function(){
       $('link').remove();
+      $('title').remove();
       head.append(styles[curStyleIndex].outerHTML);
-      
+      head.append('<title>' + themes[curStyleIndex] + '</title>');
     });
     
     $('body sprite').animate({
@@ -46,14 +68,14 @@ $(function(){
   switch(event.charCode){
     case 44:{
       curStyleIndex--;
-      if(curStyleIndex<0){
-	curStyleIndex = styles.length-1;
+        if(curStyleIndex<0){
+	   curStyleIndex = styles.length-1;
       }
     break;}
     case 46:{
       curStyleIndex++;
-      if(curStyleIndex> styles.length-1){
-	curStyleIndex = 0;
+        if(curStyleIndex> styles.length-1){
+	   curStyleIndex = 0;
       }
     break;}
   }

@@ -1,1 +1,3 @@
-readme for style changer
+Проект предназначен для быстрой подборки тем сайта
+
+Adjika Software (c) 2015
