@@ -1,0 +1,11 @@
+<html>
+	<head>
+	<script type="text/javascript" src="js/"></script>
+	<script type="text/javascript" src="js/style.changer.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	</head>
+	<body>
+	<h1>Hello, this is style changer!</h1>
+	</body>
+</html>
