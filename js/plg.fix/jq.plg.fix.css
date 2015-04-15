@@ -1,0 +1,16 @@
+
+.red {
+    float: left;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.green {
+    float: left;
+    margin: 10px;
+    width: 50px;
+    height: 250px;
+    background: green;
+}
