@@ -1,0 +1,26 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="jq.plg.fix.css">
+    <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="jq.plg.fix.js"></script>
+</head>
+<body>
+    
+    <!-- test items -->
+    <div class="red"></div>
+    <div class="green"></div>
+    <!-- end test items -->
+    
+    
+    <script type="text/javascript">
+        $('.green').fixPlugin( 'fix',{
+            'listenTarget' : $('.red'),
+            'listenAttr'   : ['width','height'],
+            'useAnimation' : true
+        } );
+    </script>
+    
+    
+</body>
