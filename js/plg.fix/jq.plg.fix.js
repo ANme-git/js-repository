@@ -10,6 +10,7 @@
                 'useAnimation' : false, // флаг анимации
                 'animationQ'   : false, // флаг очереди анимаций
                 'animationDel' : false, // время анимации в милисекундах
+                'run'          : false, // eval();
                 'obj'          : this
             },content);
             
@@ -44,7 +45,7 @@
                 }
             }
             
-            console.dir(stuff);
+            eval(stuff.run) // eval ()
             
             console.info('fix ' + stuff.obj.selector + ' (',stuff.listenAttr,') ');    
         }
