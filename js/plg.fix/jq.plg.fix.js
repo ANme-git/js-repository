@@ -6,9 +6,8 @@
         fix : function( content ) {
             var stuff = $.extend({
                 'listenTarget' : false, // эталонный объект
-                'listenAttr'   : false, // массив атриьбутов
+                'listenAttr'   : false, // массив атрибутов
                 'useAnimation' : false, // флаг анимации
-                'animationQ'   : false, // флаг очереди анимаций
                 'animationDel' : false, // время анимации в милисекундах
                 'run'          : false, // eval();
                 'obj'          : this
@@ -36,11 +35,7 @@
                             stuff.obj.css(stuff.listenAttr[i], stuff.listenTarget.css(stuff.listenAttr[i]) );
                         }
                     }else{                                                                                             // если с анимацией
-                        if( stuff.animationQ ){                                                                        // если используем очередь
-                            
-                        }else{                                                                                         // если без очереди
-                            stuff.obj.animate(stuff._animationObj,stuff.animationDel);
-                        }
+                        stuff.obj.animate(stuff._animationObj,stuff.animationDel);
                     }
                 }
             }
