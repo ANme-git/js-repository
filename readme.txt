@@ -3,3 +3,6 @@
 @luger - ветка люгера
 
 @dump - резервные копии (на всякий случай)
+
+	jq.plg.fix
+	jq.plg.accordeon
