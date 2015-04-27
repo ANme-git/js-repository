@@ -1,0 +1,54 @@
+.slidetour-container .item:first-child {
+    display: block;
+}
+
+.slidetour-container img:first-child {
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+}
+
+.slidetour-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slidetour-container:hover .forward ,
+.slidetour-container:hover .backward {
+    display: block;
+}
+
+.slidetour-container .item {
+    display: none;
+    width: 100%;
+}
+
+.slidetour-container img {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+}
+
+.slidetour-container .forward {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    opacity: 0.5;
+    cursor: pointer;
+    display: none;
+}
+
+.slidetour-container .backward {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    left: 50%;
+    bottom: 0px;
+    background: url("back.png");
+    cursor: pointer;
+    display: none;
+}
