@@ -1,0 +1,38 @@
+$(function(){
+
+	var head = $('head');
+	var styles = $('link');
+	var curStyleIndex = 0;
+
+	$('link').remove();
+	
+	console.log('l: ',styles.length);
+	styles.each(function(i){
+		console.log(i,styles[i].outerHTML);
+	});
+
+	// ставим начальный стиль
+	head.append(styles[curStyleIndex].outerHTML);
+
+	$(window).keypress(function(event){
+
+		switch(event.charCode){
+			case 44:{
+				curStyleIndex--;
+				if(curStyleIndex<0){
+					curStyleIndex = styles.length-1;
+				}
+				break;}
+			case 46:{
+				curStyleIndex++;
+				if(curStyleIndex> styles.length-1){
+					curStyleIndex = 0;
+				}
+				break;}
+		}
+		$('link').remove();
+		head.append(styles[curStyleIndex].outerHTML);
+		console.log(curStyleIndex);// <44 >46
+	});
+
+});

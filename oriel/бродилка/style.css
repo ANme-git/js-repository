@@ -1,0 +1,71 @@
+.wander-container {
+  overflow: hidden;
+}
+
+#one .wander-image {
+	display: block;
+	width: 100%;
+}
+
+.back {
+  display: block;
+  width: 30px;
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -15px;
+  background: #fff url(back.png) no-repeat center center;
+  -moz-border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+    cursor: pointer
+}
+
+img.wander-image {
+  display:none;
+  width: 0%;
+}
+
+.forward {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.35);
+  display:none;
+    cursor: pointer;
+}
+
+div#one .forward {
+  top: 50%;
+  left: 50%;
+}
+
+div#two .forward {
+  top: 70%;
+  left: 20%;
+}
+
+div#three .forward {
+  top: 30%;
+  left: 60%;
+}
+
+#one:hover .forward {
+  display: block;
+}
+
+#two:hover .forward {
+  display: block;
+}
+
+#three:hover .forward {
+  display: block;
+}
+
+.wander {
+  position: absolute;
+  width: 100%;
+}

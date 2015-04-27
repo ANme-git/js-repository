@@ -1,0 +1,26 @@
+.accordeon-lent {
+    width: 600px;
+    height: 400px;
+    border: 1px #000 solid;
+}
+
+.accordeon-lent .accordeon-item {
+    float: left;
+    height: inherit;
+}
+
+.accordeon-lent .accordeon-item .head {
+    float: left;
+    width: 50px;
+    height: inherit;
+    color: #fff;
+    background: #000;
+    writing-mode: tb-rl;
+}
+
+.accordeon-lent .accordeon-item .container {
+    float: left;
+    width: 0px;
+    height: inherit;
+    overflow: hidden;
+}
